@@ -1,0 +1,16 @@
+body{
+	background-image:url('bg2.jpg');
+}
+#d1{
+	width:60%;
+	//height:120%;
+	//background-color:red;
+	margin-left:20%;
+	cursor: url(5.cur),auto;
+	margin-top:-10px;
+	border:5px solid green;
+	background-image:url('bg3.jpg');
+}
+input{
+	margin:10px;
+}

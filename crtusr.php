@@ -1,0 +1,48 @@
+<?php
+session_start();
+if($_SESSION['x']==='lock'){
+	echo "<html>
+<head>
+	<title>Create User</title>
+	<link rel='stylesheet' type='text/css' href='crtusr.css' />
+	<script>
+		function chkpwd(){
+			//var x=document.getElementById('u').value;
+			if(  document.getElementById('u').value == '' || document.getElementById('u').value == null ){
+				document.getElementById('usr').innerHTML='Enter User Name';
+				return false;				
+			}
+			if( document.getElementById('p').value != document.getElementById('p1').value ){
+				document.getElementById('re').innerHTML='Password do not match';
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id='d1'>
+		<form id='frm1' method='POST' action='crtusr1.php' onsubmit='return chkpwd();'>
+			<fieldset>
+				<legend>Create User</legend>
+				<center>
+					<b align=>User Name:</b><input id='u' type='text' name='u' placeholder='User Name'/><br />
+					<p id='usr'></p>
+					<b>Password :</b><input id='p' type='password' name='p' placeholder='Password' /><br />
+					<b>Repeat Password :</b><input id='p1' type='password' name='p1' placeholder='Repeat Password' /><br />
+					<p id='re'></p>
+					<input type='submit' value='Create User' onclick='chkpwd();' /><br />
+				</center>
+			</fieldset>
+		<a href='crtusr3.php'>click here to delete a user</a>
+		
+		</form>
+	</div>
+</body>
+<html>";
+}
+else{
+	header('location: log_in.php');
+}
+
+
+?>

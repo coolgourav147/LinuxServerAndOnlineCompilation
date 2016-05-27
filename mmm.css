@@ -1,0 +1,101 @@
+body{
+	background-image:url('bg2.jpg');
+}
+#main{
+	width:60%;
+	height:120%;
+	//background-color:red;
+	margin-left:20%;
+	cursor: url(5.cur),auto;
+	margin-top:-10px;
+	border:5px solid green;
+	background-image:url('bg3.jpg');
+}
+#table1{
+	width:100%;
+	//background-color:gray;
+	font-size:20px;
+}
+#welcome{
+	border:5px solid yellow;
+	width:130px;
+	border-radius:0px 0px 75px 0px;
+	margin:-3px;
+}
+#logout{
+		border:5px solid yellow;
+		width:90px;
+		border-radius:0px 0px 0px 75px;
+		float:right;
+		margin-top:-24px;
+		margin-right:-3px;
+}
+#l1{
+	float:right;
+}
+#table2{
+	//background-color:green;
+	width:100%;
+	height:25%;
+}
+#h2{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size:60px;
+	display:inline;
+	text-shadow:2px 2px 8px red;
+}
+#mar1{
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+}
+#mar2{
+	-webkit-transform:rotate(+10deg);
+	-moz-transform:rotate(+10deg);
+}
+#td2{
+	width:50%;
+}
+#table3{
+	width:100%;
+}
+#t3d{
+	float:right;
+//	margin-left:100px;
+}
+#c1{
+	width:20%;
+}
+#a{
+	text-decoration:none;
+	font-size:23px;
+}
+#as{
+	//border:5px solid green;
+	//text-shadow: 2px 2px #ff0000;
+	shadow: 2px 2px #ff0000;
+	border-style:groove;
+	font-size:25px;
+	padding:20px;
+	margin:0px;
+	border-spacing:100px;
+	box-shadow: 2px 2px 2px green;
+}
+#table4 a{
+	color:black;
+	text-decoration:none;
+}
+#table4 a:hover{
+	font-color:red;
+	text-shadow:0 0 3px #FF0000;
+	text-decoration:none;
+	font-size:30px;
+}
+#t{ 
+	margin:0px;
+	font-size:20px;
+}
+#table4{
+	border-spacing: 10px 25px;
+	margin-left:1px;
+	//background-color:pink;
+}

@@ -1,0 +1,25 @@
+<?php
+
+$u1=$_POST['u'];
+$p1=$_POST['p'];
+
+session_start();
+if($_SESSION['x']==="lock"){
+#echo "$u1 $p1";
+echo "<html>
+<head>
+	<title>Basic Command</title>
+	<link rel='stylesheet' type='text/css' href='test.css' >
+</head>
+<body><div id='d1'>";
+
+$cr=exec("sudo useradd $u1 -p `openssl passwd -1 '$p1'`");
+echo "user $u1 has created successfully";
+}
+else{
+header('location: log_in.html');
+}
+
+echo "</div></body></html>";
+
+?>

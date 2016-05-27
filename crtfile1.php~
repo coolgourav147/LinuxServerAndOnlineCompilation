@@ -1,0 +1,31 @@
+<?php
+session_start();
+// echo $_SESSION['x'];
+if($_SESSION['x']==='lock'){
+$src = $_POST['src'];
+$con = $_POST['content'];
+//echo $con;
+//$src = "/var/www/html/mahimahi.txt";
+//echo "$src $con";
+echo "<html>
+<head>
+	<title>Basic Command</title>
+	<link rel='stylesheet' type='text/css' href='test.css' >
+</head>
+<body><div id='d1'>";
+//echo "$src" . " $con" ;
+//$src="/var/www/html/as.txt";
+//$con="hello this is test or ho ja yarr";
+shell_exec('sudo echo "'.$con.'" >'. $src);
+//echo 'sudo echo "'.$con.'" >'. $src;
+echo "This File is save is at location: $src \n <br />";
+echo "The contnt of the file is: \n <br />";
+echo shell_exec("sudo cat $src");
+echo "</div></body> </html>";
+}
+
+
+else {
+	header('location: log_in.php');
+}
+?>
